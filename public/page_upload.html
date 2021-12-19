@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            File uploading
+        </title>
+    </head>
+    <body>
+        <h3>File upload:</h3>
+        Select to file upload:<br>
+        <form action="/file_upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="myfile" size="500"><br/><br/>
+            <input type="submit" value="upload file">
+        </form>
+            <br><br>
+            <h3>Select multiple file upload:</h3>
+            <form action="/photos_upload" method="POST" enctype="multipart/form-data">
+                <input type="file" name="photos" size="500" multiple="multiple"><br>
+
+                <input type="submit" value="upload file">
+
+            </form>
+
+     
+    </body>
+</html>

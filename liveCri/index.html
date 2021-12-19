@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+        padding: 0;
+        margin: 0;
+        /* font-family: "Jost", sans-serif; */
+        font-family: "Quicksand", sans-serif;
+      }
+        .content-table{
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            min-width: 400px;
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0,0,0,0.15);
+        }
+        .content-table thead tr,tbody th{
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .content-table th,
+        .content-table td{
+            padding: 12px 15px;
+        }
+
+        .content-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+
+        }
+
+        .content-table tbody tr:nth-of-type(even){
+            background-color: #f3f3f3;
+        }
+
+        .content-table tbody tr:last-of-type{
+            border-bottom: 2px solid #009879;
+        }
+       
+    </style>
+    <title>{%title%}</title>
+    
+</head>
+<body>
+    <div class="box" align="center">
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th colspan="5" align="center">{%titlee%}</th>
+                </tr>
+            </thead>
+            <tbody align="center">
+                <tr>
+                    <th>Score</th>
+                    <td colspan="4">{%currsocre%}&nbsp;&nbsp;|&nbsp;&nbsp;Runrate:{%runrate%}</td>
+                </tr>
+            
+            
+                <tr>
+                    <th rowspan="3">Batter</th>
+                    <td colspan="4">{%batname%}</td>
+                    
+                </tr>
+                <tr>
+                    <th>Batsmanrun</th>
+                    <th>Ballsfaced</th>
+                    <th>4s</th>
+                    <th>6s</th>
+                </tr>
+                <tr>
+                    <td>{%brun%}</td>
+                    <td>{%bfaced%}</td>
+                    <td>{%fours%}</td>
+                    <td>{%six%}</td>
+                </tr>
+                <tr>
+                    <th rowspan="3">Bowler</th>
+                    <td colspan="4">{%bolwername%}</td>
+                </tr>
+                <tr>
+                    <th>O</th>
+                    <th>R</th>
+                    <th colspan="2">W</th>
+                    
+                </tr>
+                <tr align="left">
+                    <td>{%boover%}</td>
+                    <td>{%borun%}</td>
+                    <td>{%bowicket%}</td>
+                   
+                </tr>
+                <tr>
+                    <th>Partnership</th>
+                    <td colspan="4">{%ps%}</td>
+                </tr>
+                <tr>
+                    <th>update</th>
+                    <td colspan="4">{%update%}</td>
+                </tr>
+                <tr>
+                    <th>Recentballs</th>
+                    <td colspan="4">{%recentballs%}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+   
+</body>
+</html>
